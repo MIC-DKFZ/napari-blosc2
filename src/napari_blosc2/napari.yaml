@@ -1,0 +1,28 @@
+name: napari-blosc2
+display_name: Blosc2 Reader & Writer
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: napari-blosc2.get_reader
+      python_name: napari_blosc2._reader:napari_get_reader
+      title: Open data with Blosc2 Reader & Writer
+    - id: napari-blosc2.write_multiple
+      python_name: napari_blosc2._writer:write_multiple
+      title: Save multi-layer data with Blosc2 Reader & Writer
+    - id: napari-blosc2.write_single_image
+      python_name: napari_blosc2._writer:write_single_image
+      title: Save image data with Blosc2 Reader & Writer
+  readers:
+    - command: napari-blosc2.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: napari-blosc2.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-blosc2.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
