@@ -18,11 +18,11 @@ contributions:
   readers:
     - command: napari-blosc2.get_reader
       accepts_directories: false
-      filename_patterns: ['*.npy']
+      filename_patterns: ['*.b2nd']
   writers:
     - command: napari-blosc2.write_multiple
       layer_types: ['image*','labels*']
       filename_extensions: []
     - command: napari-blosc2.write_single_image
       layer_types: ['image']
-      filename_extensions: ['.npy']
+      filename_extensions: ['.b2nd']

@@ -9,6 +9,7 @@ Replace code below according to your needs.
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, List, Sequence, Tuple, Union
+import blosc2
 
 if TYPE_CHECKING:
     DataType = Union[Any, Sequence[Any]]
@@ -33,7 +34,7 @@ def write_single_image(path: str, data: Any, meta: dict) -> List[str]:
     [path] : A list containing the string path to the saved file.
     """
 
-    # implement your writer logic here ...
+    blosc2.asarray(array=data, urlpath=path, meta=meta)
 
     # return path to any file(s) that were successfully written
     return [path]
