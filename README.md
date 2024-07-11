@@ -3,8 +3,6 @@
 [![License Apache Software License 2.0](https://img.shields.io/pypi/l/napari-blosc2.svg?color=green)](https://github.com/Karol-G/napari-blosc2/raw/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/napari-blosc2.svg?color=green)](https://pypi.org/project/napari-blosc2)
 [![Python Version](https://img.shields.io/pypi/pyversions/napari-blosc2.svg?color=green)](https://python.org)
-[![tests](https://github.com/Karol-G/napari-blosc2/workflows/tests/badge.svg)](https://github.com/Karol-G/napari-blosc2/actions)
-[![codecov](https://codecov.io/gh/Karol-G/napari-blosc2/branch/main/graph/badge.svg)](https://codecov.io/gh/Karol-G/napari-blosc2)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-blosc2)](https://napari-hub.org/plugins/napari-blosc2)
 
 An image reader & writer for blosc2 images.
